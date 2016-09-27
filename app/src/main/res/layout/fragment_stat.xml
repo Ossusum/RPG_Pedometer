@@ -1,0 +1,288 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.example.ossusum.wrpg.StatFragment">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="PlayerName"
+        android:id="@+id/PlayerNameTextView2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/StrengthStatView2"
+        android:layout_alignEnd="@+id/StrengthStatView2" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="175dp"
+        android:id="@+id/PlayerImageView2"
+        android:src="@mipmap/ic_launcher"
+        android:layout_below="@+id/PlayerNameTextView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/StrengthStatView2"
+        android:layout_toStartOf="@+id/StrengthStatView2" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Strength"
+        android:id="@+id/textView22"
+        android:layout_below="@+id/PlayerImageView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="23dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Endurance"
+        android:id="@+id/textView32"
+        android:layout_below="@+id/textView22"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="23dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Intelligence"
+        android:id="@+id/textView42"
+        android:layout_below="@+id/textView32"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="23dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Speed"
+        android:id="@+id/textView52"
+        android:layout_below="@+id/textView42"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="23dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Luck"
+        android:id="@+id/textView62"
+        android:layout_below="@+id/textView52"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="23dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/StrengthStatView2"
+        android:layout_alignTop="@+id/textView22"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/EnduranceStatView2"
+        android:layout_alignTop="@+id/textView32"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/IntelligenceStatView2"
+        android:layout_alignTop="@+id/textView42"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/SpeedStatView2"
+        android:layout_alignTop="@+id/textView52"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/LuckStatView2"
+        android:layout_alignTop="@+id/textView62"
+        android:layout_centerHorizontal="true" />
+
+    <ProgressBar
+        style="?android:progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/expBar2"
+        android:layout_below="@+id/LuckStatView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="23dp"
+        android:indeterminate="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1000"
+        android:id="@+id/TotalExp2"
+        android:layout_below="@+id/expBar2"
+        android:layout_toLeftOf="@+id/LuckStatView2"
+        android:layout_toStartOf="@+id/LuckStatView2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="/"
+        android:id="@+id/textView132"
+        android:layout_below="@+id/expBar2"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2000"
+        android:id="@+id/ExpNeeded2"
+        android:layout_below="@+id/expBar2"
+        android:layout_toRightOf="@+id/textView132"
+        android:layout_toEndOf="@+id/textView132" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EXP"
+        android:id="@+id/textView152"
+        android:layout_below="@+id/expBar2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lv:"
+        android:id="@+id/textView72"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/pointsLabel"
+        android:layout_alignEnd="@+id/pointsLabel" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/LevelView2"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/PointsView"
+        android:layout_alignStart="@+id/PointsView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Points:"
+        android:id="@+id/pointsLabel"
+        android:layout_below="@+id/PlayerNameTextView2"
+        android:layout_toRightOf="@+id/PlayerImageView2"
+        android:layout_toEndOf="@+id/PlayerImageView2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/PointsView"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp"
+        android:layout_alignTop="@+id/pointsLabel"
+        android:layout_toRightOf="@+id/pointsLabel"
+        android:layout_toEndOf="@+id/pointsLabel" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rightArrowStrength"
+        android:layout_alignTop="@+id/StrengthStatView2"
+        android:layout_toRightOf="@+id/PlayerNameTextView2"
+        android:layout_toEndOf="@+id/PlayerNameTextView2" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/leftArrowStrength"
+        android:layout_alignTop="@+id/StrengthStatView2"
+        android:layout_toLeftOf="@+id/StrengthStatView2"
+        android:layout_toStartOf="@+id/StrengthStatView2"
+        />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rightArrowEndurance"
+        android:layout_alignTop="@+id/EnduranceStatView2"
+        android:layout_alignLeft="@+id/rightArrowStrength"
+        android:layout_alignStart="@+id/rightArrowStrength"
+        />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rightArrowIntelligence"
+        android:layout_alignTop="@+id/IntelligenceStatView2"
+        android:layout_alignLeft="@+id/rightArrowEndurance"
+        android:layout_alignStart="@+id/rightArrowEndurance" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rightArrowSpeed"
+        android:layout_alignTop="@+id/SpeedStatView2"
+        android:layout_alignLeft="@+id/rightArrowIntelligence"
+        android:layout_alignStart="@+id/rightArrowIntelligence" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rightArrowLuck"
+        android:layout_alignTop="@+id/LuckStatView2"
+        android:layout_alignLeft="@+id/rightArrowSpeed"
+        android:layout_alignStart="@+id/rightArrowSpeed" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/leftArrowEndurance"
+        android:layout_alignTop="@+id/EnduranceStatView2"
+        android:layout_toLeftOf="@+id/EnduranceStatView2"
+        android:layout_toStartOf="@+id/EnduranceStatView2" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/leftArrowIntelligence"
+        android:layout_alignTop="@+id/IntelligenceStatView2"
+        android:layout_toLeftOf="@+id/textView132"
+        android:layout_toStartOf="@+id/textView132" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/leftArrowSpeed"
+        android:layout_alignTop="@+id/SpeedStatView2"
+        android:layout_toLeftOf="@+id/SpeedStatView2"
+        android:layout_toStartOf="@+id/SpeedStatView2" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/leftArrowLuck"
+        android:layout_alignTop="@+id/LuckStatView2"
+        android:layout_toLeftOf="@+id/textView132"
+        android:layout_toStartOf="@+id/textView132" />
+
+</RelativeLayout>
